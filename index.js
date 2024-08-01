@@ -28,9 +28,7 @@ app.use(
 
 app.use(cookieParser());
 
-const server = app.listen(port, () => {
-  console.log(`Server is running http://localhost:${port}`);
-});
+app.listen(port);
 
 app.post("/users", (req, res) => {
   const data = req.body;
